@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_7_Final</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+</head>
+<body>
+
+    <!--Navegador-->
+    <header class="cd-auto-hide-header">
+        <div class="logo"><a href="#0"><img src="images/cd-logo.svg" alt="Logo"></a></div>
+    
+        <nav class="cd-primary-nav">
+            <a href="#cd-navigation" class="nav-trigger">
+                <span>
+                    <em aria-hidden="true"></em>
+                    Menu
+                </span>
+            </a> <!-- .nav-trigger -->
+    
+            <ul id="cd-navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Razas.html">Razas</a></li>
+                <li><a href="Alimentacion.html">Alimentación</a></li>
+                <li><a href="#0">Cuidados</a></li>
+                <li><a href="#0">Contáctenos</a></li>
+            </ul>
+        </nav> <!-- .cd-primary-nav -->
+    </header> 
+
+
+    <!--video-->
+    
+    <iframe width="1080" style="justify-content: center; margin:auto; align-items: center; display: flex; padding-top: 20px;" height="620" src="https://www.youtube.com/embed/jjQhKCntAZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      
+<!--Javascript-->    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+
+           
+<!--Fin slider-->
+
+ <!-- .cd-main-content -->
+	
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+ <script>
+     if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+ </script>
+ <script src="js/main.js"></script> <!-- Resource jQuery -->
+ 
+
+</body>
+</html>
